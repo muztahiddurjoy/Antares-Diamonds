@@ -16,7 +16,6 @@ $(document).ready(function(){
     })
     var brandcarou = $('.brandcarousel')
     brandcarou.owlCarousel({
-        items:2,
         loop:true,
         margin:10,
         responsive:{
@@ -39,5 +38,15 @@ $(document).ready(function(){
         // With optional speed parameter
         // Parameters has to be in square bracket '[]'
         brandcarou.trigger('prev.owl.carousel', [300]);
+    })
+    var caroutrend = $('#trendingcarou')
+    caroutrend.owlCarousel({
+        loop:true,
+        margin:10,
+        items:1,
+        dots:true,
+        autoPlay:true,
+        nav: true,
+        dotsEach: true  
     })
 })
